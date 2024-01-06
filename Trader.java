@@ -1,8 +1,12 @@
 import java.util.*;
+
+//Defining Class
 public class ShareTrader {
 
+    //Declaring a private static integer variable named maxProfit to store the calculated maximum profit
     private static int maxProfit;
 
+    //method to take an array of stock prices as input and returns the maximum profit that can be achieved by making at most two transactions
     public static int MaxProfit(int[] stockPrices) {
         int n = stockPrices.length;
         if (n < 2) {
@@ -51,6 +55,7 @@ public class ShareTrader {
         return maxProfit;
     }
 
+    //entry point of the program, gets user input, calls the MaxProfit method, and prints the result
     public static void main(String[] args) {
       Scanner scanner = new Scanner(System.in);
 
