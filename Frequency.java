@@ -1,12 +1,16 @@
 import java.util.Scanner;
 
+//Defining Class
 public class Frequency{
+    
+    //Declaring a private static array of integers named numbers to store the input array
     private static int[] numbers;
-
+    //method sets the numbers array with the provided input array
     public static void Number(int[] array) {
         numbers = array;
     }
 
+    //method finds and prints the top k frequent numbers in the numbers array
     public static void Frequent(int k) {
         if (numbers == null || numbers.length == 0) {
             System.out.println("Array is empty or not initialized");
@@ -48,6 +52,7 @@ public class Frequency{
         }
     }
 
+    //The entry point of the program, it gets user input, calls the Frequent method, and prints the results
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the size of the array: ");
